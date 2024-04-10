@@ -11,6 +11,5 @@ export default {
   'menu.app-usage-record': '应用程序使用记录',
   'menu.browser-usage-record': '浏览器使用记录',
   'menu.normal-dashboard': '应用程序使用统计分析',
-  'menu.user': '用户列表',
-  'menu.rule': '规则列表',
+  'menu.user': '用户列表'
 };

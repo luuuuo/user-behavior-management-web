@@ -65,12 +65,12 @@ export default [
     component: './user',
     access: 'Admin',
   },
-  {
-    icon: 'User',
-    path: '/rule',
-    name: 'rule',
-    component: './rule',
-  },
+  // {
+  //   icon: 'User',
+  //   path: '/rule',
+  //   name: 'rule',
+  //   component: './rule',
+  // },
   {
     path: '/',
     redirect: '/welcome',
