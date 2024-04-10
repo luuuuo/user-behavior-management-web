@@ -10,7 +10,7 @@ export default {
   'menu.admin-dashboard': '综合统计分析',
   'menu.app-usage-record': '应用程序使用记录',
   'menu.browser-usage-record': '浏览器使用记录',
-  'menu.normal-dashboard': '应用程序使用统计分析',
+  // 'menu.normal-dashboard': '应用程序使用统计分析',
   'menu.user': '用户列表',
   'menu.rule': '规则列表',
 };
