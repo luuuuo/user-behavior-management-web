@@ -32,13 +32,13 @@ export default [
     layout: false,
     component: './login',
   },
-  {
-    icon: 'User',
-    path: '/admin-dashboard',
-    name: 'admin-dashboard',
-    component: './admin-dashboard',
-    access: 'Admin',
-  },
+  // {
+  //   icon: 'User',
+  //   path: '/admin-dashboard',
+  //   name: 'admin-dashboard',
+  //   component: './admin-dashboard',
+  //   access: 'Admin',
+  // },
   // {
   //   icon: 'User',
   //   path: '/normal-dashboard',
