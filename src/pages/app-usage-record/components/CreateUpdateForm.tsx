@@ -40,6 +40,7 @@ export const CreateUpdateForm = <T extends AppUsageRecordType>(): JSX.Element =>
         closable: true,
       }}
     >
+      <ProFormText label="应用类型" name="processType" />
       <ProFormText label="应用名称" name="processName" />
       <ProFormText label="版本" name="version" />
       <ProFormText label="用户ID" name="identity" />
