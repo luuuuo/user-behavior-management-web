@@ -134,11 +134,6 @@ const Analysis: FC<AnalysisProps> = () => {
         >
           <Col xl={12} lg={24} md={24} sm={24} xs={24}>
             <Suspense fallback={null}>
-              <TopSearch loading={loading} browserPieData={browserPieData || []} />
-            </Suspense>
-          </Col>
-          <Col xl={12} lg={24} md={24} sm={24} xs={24}>
-            <Suspense fallback={null}>
               <ProportionSales
                 salesType={salesType}
                 loading={loading}
@@ -147,6 +142,10 @@ const Analysis: FC<AnalysisProps> = () => {
               />
             </Suspense>
           </Col>
+          <Col xl={12} lg={24} md={24} sm={24} xs={24}>
+            <Suspense fallback={null}>
+              <TopSearch loading={loading} browserPieData={browserPieData || []} />
+            </Suspense>
         </Row>
       </>
     </GridContent>

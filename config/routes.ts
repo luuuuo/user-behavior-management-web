@@ -39,13 +39,13 @@ export default [
     component: './admin-dashboard',
     access: 'Admin',
   },
-  {
-    icon: 'User',
-    path: '/normal-dashboard',
-    name: 'normal-dashboard',
-    component: './normal-dashboard',
-    access: 'Normal',
-  },
+  // {
+  //   icon: 'User',
+  //   path: '/normal-dashboard',
+  //   name: 'normal-dashboard',
+  //   component: './normal-dashboard',
+  //   access: 'Normal',
+  // },
   {
     icon: 'User',
     path: '/app-usage-record',

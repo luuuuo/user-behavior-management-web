@@ -25,7 +25,7 @@ export const useRule = <T extends RuleType>(options: Partial<CRUDActionType<T>> 
       return await create<T>(`/`, { data: { id } });
     },
     async createHandler(entity: T) {
-      return await createHandler(`/behavior/addBehavior`, { entity });
+      return await createHandler(`/rule/addRule`, { entity });
     },
     async removeHandler(entity: T | undefined) {
       if (!entity?.id) {
