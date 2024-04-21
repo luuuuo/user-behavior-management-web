@@ -2,7 +2,7 @@
  * @Author: Semmy Wong
  * @Date: 2024-03-21 21:15:20
  * @LastEditors: Semmy Wong
- * @LastEditTime: 2024-04-09 21:37:05
+ * @LastEditTime: 2024-04-21 17:01:13
  * @Description: Description
  */
 import { CommonReducerAction, DEFAULT_PAGE_SIZE } from '@/common/constants';
@@ -15,6 +15,7 @@ import { PageContainer, ProTable } from '@ant-design/pro-components';
 import { useModel, useParams } from '@umijs/max';
 import { Button } from 'antd';
 import { useRef } from 'react';
+import { CreateUpdateForm } from './components/CreateUpdateForm';
 import { useBrowserUsageRecord } from './useBrowserUsageRecord';
 
 export const BrowserUsageRecord = <T extends BrowserUsageRecordType>(): React.ReactNode => {
@@ -42,12 +43,10 @@ export const BrowserUsageRecord = <T extends BrowserUsageRecordType>(): React.Re
     },
     {
       title: '浏览器',
-      search: false,
       dataIndex: 'browserName',
     },
     {
       title: '版本',
-      search: false,
       dataIndex: 'version',
     },
     {
@@ -62,7 +61,6 @@ export const BrowserUsageRecord = <T extends BrowserUsageRecordType>(): React.Re
     },
     {
       title: '站点标题',
-      search: false,
       dataIndex: 'webTitle',
     },
     {
@@ -86,7 +84,6 @@ export const BrowserUsageRecord = <T extends BrowserUsageRecordType>(): React.Re
           headerTitle={'浏览器记录'}
           actionRef={tableActionRef}
           rowKey="id"
-          search={false}
           pagination={{
             defaultPageSize: DEFAULT_PAGE_SIZE,
             showSizeChanger: true,
@@ -110,6 +107,7 @@ export const BrowserUsageRecord = <T extends BrowserUsageRecordType>(): React.Re
           columns={columns}
         />
       </PageContainer>
+      <CreateUpdateForm<T> />
     </PageContextProvider>
   );
 };

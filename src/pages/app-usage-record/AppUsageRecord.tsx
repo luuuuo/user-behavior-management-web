@@ -2,7 +2,7 @@
  * @Author: Semmy Wong
  * @Date: 2024-03-21 21:15:20
  * @LastEditors: Semmy Wong
- * @LastEditTime: 2024-04-10 22:28:25
+ * @LastEditTime: 2024-04-21 16:59:46
  * @Description: Description
  */
 import { CommonReducerAction, DEFAULT_PAGE_SIZE } from '@/common/constants';
@@ -40,7 +40,6 @@ export const AppUsageRecord = <T extends AppUsageRecordType>(): React.ReactNode 
     },
     {
       title: '应用名称',
-      search: false,
       dataIndex: 'processName',
     },
     {
@@ -75,7 +74,6 @@ export const AppUsageRecord = <T extends AppUsageRecordType>(): React.ReactNode 
           headerTitle={'用户行为列表'}
           actionRef={tableActionRef}
           rowKey="id"
-          search={false}
           pagination={{
             defaultPageSize: DEFAULT_PAGE_SIZE,
             showSizeChanger: true,
